@@ -1,6 +1,6 @@
 # Python Notes
 
-## Variables and Simple Data Types
+#### Variables and Simple Data Types
 
 * string - series of characters, anything inside of quotes is considered a string
 * method - an action that Python can perform on a piece of data
@@ -57,4 +57,12 @@
       message = "Happy " + str(age) + "rd Birthday!"
       print(message)
       ````
+
+#### Lists
+* list - collection of items in a particular order
+* [] indicate a list
+* lists are ordered collections, you can access any item in a list by telling python the location, or _index_
+  * `print(bicycles[0].title())`
+* to access the last elemenet in a list, you would use [-1]
+  * `print(bicycles[-1])`
 
