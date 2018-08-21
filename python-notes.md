@@ -59,10 +59,21 @@
       ````
 
 #### Lists
+* methods for working with lists
+  * .insert()
+  * .append()
+  * .pop()
+  * del
+  * .remove()
 * list - collection of items in a particular order
 * [] indicate a list
 * lists are ordered collections, you can access any item in a list by telling python the location, or _index_
   * `print(bicycles[0].title())`
-* to access the last elemenet in a list, you would use [-1]
+* to access the last element in a list, you would use [-1]
   * `print(bicycles[-1])`
+* add elements to a list with .append() and .insert()
+  * append adds to the end, insert asks for a position
+    * `motorcycles.insert(0, 'ducati')`
+* delete items from a list wiht del
+  * `del motorcycles[-1]`
 
