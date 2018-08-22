@@ -1,21 +1,30 @@
 # Useful Linux Commands
 
+#### Misc
+
 * check status of mdadm RAID
   * `cat /proc/mdstat`
 * mount smb share on Linux
   * `mount -t cifs -o username=USERNAME,password=PASSWORD,uid=UID,gid=GID //HOST/SHARE /local/mount/point`
+* backup mysql db
+  * `mysqldump -h localhost -u rt -p --default-character-set=binary wiki > backup.sql`
+* restore mysql db
+  * `mysql -u root -p my_wiki < backup.sql`
 
 #### Docker
-* Start container on a port and link with another
+
+* start container on a port and link with another
   * `docker run --name mediawiki -p 8080:80 --link mediawiki-mysql:mysql -d mediawiki`
-* List running containers
+* list running containers
   * `docker ps`
-* Start a conainter on a port
+* start a conainter on a port
   * `docker run --name mediawiki -p 8080:80 -d mediawiki`
-* Kill a container
+* kill a container
   * `docker kill 233fce5bcd21`
-* Copy files to a container
+* copy files to a container
   * `docker cp LocalSettings.php mediawiki:/var/www/html`
-* List resource usage of running containers
+* list resource usage of running containers
   * `docker cp LocalSettings.php mediawiki:/var/www/html`
+* launch a bash shell in a conatiner
+  * `docker exec -it mediawiki-mysql bash`
 
