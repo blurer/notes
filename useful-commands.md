@@ -1,5 +1,16 @@
 # Useful Linux Commands
 
+#### Shell
+* delete text in a file
+  * `sed "/TEXT/d" < inputfile`
+* append date to file
+  * `touch "foo.backup.$(date +%F_%R)"`
+    * `foo.backup.2013-10-16_19:25`
+* `scp` most recent file
+  * ````
+    $ RECENT=$(ssh someone@example.com ls -lrt /remote/path/ | awk '/.ubx/ { f=$NF }; END { print f }');`
+    $ scp someone@example.com:/remote/path/${RECENT} /local/path/${RECENT};
+    ````
 #### Misc
 
 * check status of mdadm RAID
