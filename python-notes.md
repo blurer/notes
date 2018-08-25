@@ -77,3 +77,16 @@
 * delete items from a list wiht del
   * `del motorcycles[-1]`
 
+#### Looping
+* range() - used to generate a series of numbers
+  * ````
+    for value in range(1,5):
+        print(value)
+    ````
+* find minimum, maximum, and sum of a list of numbers
+  * min()
+  * max()
+  * sum()
+* list comprehension
+ * allows you to generate a list in one line of code, combines for loop and creation
+  * `squares = [value**2 for value in range(1,11)]`
