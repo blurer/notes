@@ -39,3 +39,6 @@
 * launch a bash shell in a conatiner
   * `docker exec -it mediawiki-mysql bash`
 
+#### UniFi
+* show arp table
+  * `cat /proc/net/arp`
