@@ -42,6 +42,8 @@
   * `docker cp LocalSettings.php mediawiki:/var/www/html`
 * launch a bash shell in a conatiner
   * `docker exec -it mediawiki-mysql bash`
+* show stopped docker containers
+  * `docker ps -a | grep Exit`
 
 #### UniFi
 * show arp table
