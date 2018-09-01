@@ -17,6 +17,10 @@
   * `cat /proc/mdstat`
 * mount smb share on Linux
   * `mount -t cifs -o username=USERNAME,password=PASSWORD,uid=UID,gid=GID //HOST/SHARE /local/mount/point`
+* add smb share to fstab
+  * create a file in /home/user named .smbcredentials
+  * inside that file create twi lines - username=USERNAME password=PASSWORD
+  * `//192.168.88.147/red/media /mnt/media cifs credentials=/home/rt/.smbcredentials,iocharset=utf8,gid=1000,uid=1000,file_mode=0777,dir_mode=0777,sec=ntlm 0 0`
 * backup mysql db
   * `mysqldump -h localhost -u rt -p --default-character-set=binary wiki > backup.sql`
 * restore mysql db
