@@ -11,6 +11,9 @@
     $ RECENT=$(ssh someone@example.com ls -lrt /remote/path/ | awk '/.ubx/ { f=$NF }; END { print f }');`
     $ scp someone@example.com:/remote/path/${RECENT} /local/path/${RECENT};
     ````
+* burn iso to usb drive
+  * `dd bs=4M if=/path/to/archlinux.iso of=/dev/sdx status=progress oflag=sync`
+
 #### Misc
 
 * check status of mdadm RAID
