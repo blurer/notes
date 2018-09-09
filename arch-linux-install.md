@@ -128,10 +128,11 @@
     * `git clone https://aur.archlinux.org/yay.git`
     * `cd yay`
     * `makepkg -si`
-  * `yay polybar`
-  * `yay discord-canary`
+  * `yay polybar` - i3 status bar
+  * `yay discord-canary` - this version seems to work better with Arch
   * `yay spotify`
-  * `yay tldr`
+  * `yay tldr` - better help 
+  * `yay vim-instant-markdown` - browser real time md preview
   * Create or copy over ssh keys
     * create new
       * `ssh-keygen -t rsa`
