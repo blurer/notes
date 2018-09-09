@@ -4,16 +4,16 @@
   * set time with `timedatectl set-ntp true`
   * Partition disk
     * Identify what disk you're installing to with `fdisk -l` or `lsblk`
-    * The disk I'm installing to is /dev/sdc - replace this with your disk 
-    * we will need /boot, /, /home, and swap
-    * drop into fdisk promtp `fdisk /dev/sdc`
-    * print partitions with `p`
-    * delete current partitions with `d`
-    * after deleting current partitions, write changes with `w`
-    * create a new partiton with `n` - we're going to create out boot partiton first
-    * press enter for the default partition number
-    * press enter for default first sector
-    * for the last sector, you will select how large you want the partition to be. I'm choosing `+550M` here since I'm using an EFI system
+    * The disk I'm installing to is **/dev/sdc** - replace this with your disk 
+    * We will need /boot, /, /home, and swap
+    * Drop into fdisk prompt `fdisk /dev/sdc`
+    * Print partitions with `p`
+    * Delete current partitions with `d`
+    * After deleting current partitions, write changes with `w`
+    * Create a new partiton with `n` - we're going to create our boot partiton first
+    * Press enter for the default partition number
+    * Press enter for default first sector
+    * For the last sector, you will select how large you want the partition to be. I'm choosing `+550M` here since I'm using an EFI system
     * If you're prompted by a message station that the partition contains a vfat signature, press `Y` to remove it.
     * Press `n` again to create a new partition, pressing enter through the default partition number and first sector size
     * This will be the swap partition. I don't really know how useful this is since I have a lot of RAM and never sleep the computer. I'm entering `+8G` for the last sector size.
@@ -21,10 +21,10 @@
     * Last partition will be /home, just press enter through the prompts to use the rest of the disk.
     * After that press `w` to write the changes to the disk. Drop back into the fdisk prompt and press `p` to check that they're all there.
     * Here is the layout that I'll be using:
-      * /dev/sdc1 550M - /boot
-      * /dev/sdc2 8G - swap
-      * /dev/sdc3 60G - /
-      * /dev/sdc4 397.2G - /home
+      * **/dev/sdc1** 550M - /boot
+      * **/dev/sdc2** 8G - swap
+      * **/dev/sdc3** 60G - /
+      * **/dev/sdc4** 397.2G - /home
     * Now we need to set the partition type for our EFI boot partition. Press `l` to list partition types, we'll be using 1 EFI System. Press `t` to change partition types, select the partition, 1 in my case and press 1 to change it to EFI System. Again, press `w` to write these changes.
 
 * Creating Filesystems
@@ -123,7 +123,7 @@
 
 * Install Packages & Other Configuration
   * After you're in the graphical environment, you're ready to install anything else you'll need. Some of my go to's are below.
-  * `sudo pacman -S firefox chromium zsh unzip git htop python python-pip vim wget feh compton rofi tmux ranger zathura zathura-pdf-mupdf pandoc`
+  * `sudo pacman -S firefox chromium zsh unzip git htop python python-pip vim wget feh compton rofi tmux ranger zathura zathura-pdf-mupdf pandoc fd bat`
   * yay - AUR helper, allows for software installation from Arch User Repo
     * `git clone https://aur.archlinux.org/yay.git`
     * `cd yay`
@@ -131,6 +131,7 @@
   * `yay polybar`
   * `yay discord-canary`
   * `yay spotify`
+  * `yay tldr`
   * Create or copy over ssh keys
     * create new
       * `ssh-keygen -t rsa`
