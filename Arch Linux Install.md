@@ -116,20 +116,21 @@
     * `sudo pacman -S ttf-hack` - terminal font
     * `sudo pacman -S ttf-dejavu ttf-liberation` - fixes firefox fonts
     * `sudo pacman -S nvidia` - graphics drivers
-    * `sudo pacman -S pulseaudio` - if you want sound
+    * `sudo pacman -S pulseaudio alsa-utils` - if you want sound
     * `reboot` - reboot is needed after graphics drivers installation
     * After reboot, login at the tty and type `startx`
     * Now you are ready to configure your window manager
 
 * Install Packages & Other Configuration
   * After you're in the graphical environment, you're ready to install anything else you'll need. Some of my go to's are below.
-  * `sudo pacman -S firefox chromium zsh unzip git htop python python-pip vim wget feh compton rofi tmux ranger`
+  * `sudo pacman -S firefox chromium zsh unzip git htop python python-pip vim wget feh compton rofi tmux ranger zathura`
   * yay - AUR helper, allows for software installation from Arch User Repo
     * `git clone https://aur.archlinux.org/yay.git`
     * `cd yay`
     * `makepkg -si`
   * `yay polybar`
   * `yay discord-canary`
+  * `yay spotify`
   * Create or copy over ssh keys
     * create new
       * `ssh-keygen -t rsa`
