@@ -1,4 +1,4 @@
-# Arch Linux Install Guide
+ Arch Linux Install Guide
 
 * Pre-Installation
   * set time with `timedatectl set-ntp true`
