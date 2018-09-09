@@ -123,7 +123,7 @@
 
 * Install Packages & Other Configuration
   * After you're in the graphical environment, you're ready to install anything else you'll need. Some of my go to's are below.
-  * `sudo pacman -S firefox chromium zsh unzip git htop python python-pip vim wget feh compton rofi tmux ranger zathura`
+  * `sudo pacman -S firefox chromium zsh unzip git htop python python-pip vim wget feh compton rofi tmux ranger zathura zathura-pdf-mupdf pandoc`
   * yay - AUR helper, allows for software installation from Arch User Repo
     * `git clone https://aur.archlinux.org/yay.git`
     * `cd yay`
