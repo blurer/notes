@@ -40,23 +40,23 @@
 
 #### Avoiding Type Errors with the str() Function
 * Often you will want to use a variables value within a message. eg.
-* ````
+* ```
   age = 23
   message = "Happy " + age + "rd Birthday!"
   print(message)
-  ````
+  ```
   * this will return the following error becuase Python doesn't know what to do with that data
-  * ```` 
+  * ```
     Traceback (most recent call last):
      File "<stdin>", line 1, in <module>
     TypeError: can only concatenate str (not "int") to str
-    ````
+    ```
   * to solve this you have to convert the int to a str
-    * ````
+    * ```
       age = 23
       message = "Happy " + str(age) + "rd Birthday!"
       print(message)
-      ````
+      ```
 
 #### Lists
 * methods for working with lists
@@ -79,10 +79,10 @@
 
 #### Looping
 * range() - used to generate a series of numbers
-  * ````
+  * ```
     for value in range(1,5):
         print(value)
-    ````
+    ```
 * find minimum, maximum, and sum of a list of numbers
   * min()
   * max()
@@ -90,3 +90,12 @@
 * list comprehension
  * allows you to generate a list in one line of code, combines for loop and creation
   * `squares = [value**2 for value in range(1,11)]`
+
+#### Dictionaires
+* a dictionary is a collection of *key-value pairs*
+* each key is connected to a value and you can use a key to access the value associated with that key
+* a keys value can be number, string, list, or another dictionary
+* dictionary is wrapped in braces with a series of key-value pairs inside the braces
+  * `alien_0 = {'color': 'green', 'points': 5}`
+* to access values in a dictionary, give the name of the dictionary and place the key inside []
+  * `print(alien_0['color'])`
