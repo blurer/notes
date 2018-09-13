@@ -74,7 +74,7 @@
 * add elements to a list with .append() and .insert()
   * append adds to the end, insert asks for a position
     * `motorcycles.insert(0, 'ducati')`
-* delete items from a list wiht del
+* delete items from a list with del
   * `del motorcycles[-1]`
 
 #### Looping
@@ -89,7 +89,7 @@
   * sum()
 * list comprehension
  * allows you to generate a list in one line of code, combines for loop and creation
-  * `squares = [value**2 for value in range(1,11)]`
+  * `squares = [value*2 for value in range(1,11)]`
 
 #### Dictionaires
 * a dictionary is a collection of *key-value pairs*
@@ -99,3 +99,7 @@
   * `alien_0 = {'color': 'green', 'points': 5}`
 * to access values in a dictionary, give the name of the dictionary and place the key inside []
   * `print(alien_0['color'])`
+* you can add values to dictionaries at any time
+* removing key-value pairs
+  * `del alien_0['points']`
+* 
