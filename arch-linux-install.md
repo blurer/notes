@@ -128,7 +128,9 @@
 
 * Install Packages & Other Configuration
   * After you're in the graphical environment, you're ready to install anything else you'll need. Some of my go to's are below.
-  * `sudo pacman -S firefox chromium zsh unzip git htop python python-pip vim wget feh compton rofi tmux ranger w3m youtube-dl zathura zathura-pdf-mupdf pandoc fd bat`
+  * `sudo pacman -S firefox chromium zsh unzip git htop python python-pip vim wget feh compton rofi tmux ranger w3m youtube-dl zathura zathura-pdf-mupdf pandoc fd bat zsh-syntax-highlighting neofetch irssi nmap ntop tcpdump`
+  * oh-my-zsh
+    * `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"` - **Only curl scripts to bash if you've read the script and trust the source, better to not do this though.**
   * yay - AUR helper, allows for software installation from Arch User Repo
     * `git clone https://aur.archlinux.org/yay.git`
     * `cd yay`
@@ -139,6 +141,10 @@
   * `yay tldr` - better help 
   * `yay vim-instant-markdown` - browser real time md preview
   * `yay insync` - Google Drive client
+  * `yay hangups` - Google Hangouts client
+  * `yay boostnote` - GUI mardown editor
+  * `yay bitwarden-bin` - password manager
+  * `yay taskbook` - todo manager
   * Create or copy over ssh keys
     * create new
       * `ssh-keygen -t rsa`
