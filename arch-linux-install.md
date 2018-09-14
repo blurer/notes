@@ -1,7 +1,12 @@
  Arch Linux Install Guide
 
+* Create Installation Media
+  * Download Arch ISO - https://www.archlinux.org/download/
+  * Make bootable USB
+    * `dd bs=4M if=/path/to/archlinux.iso of=/dev/sdx status=progress oflag=sync`
 * Pre-Installation
-  * set time with `timedatectl set-ntp true`
+  * Boot to installation media
+  * Set time with `timedatectl set-ntp true`
   * Partition disk
     * Identify what disk you're installing to with `fdisk -l` or `lsblk`
     * The disk I'm installing to is **/dev/sdc** - replace this with your disk 
@@ -123,7 +128,7 @@
 
 * Install Packages & Other Configuration
   * After you're in the graphical environment, you're ready to install anything else you'll need. Some of my go to's are below.
-  * `sudo pacman -S firefox chromium zsh unzip git htop python python-pip vim wget feh compton rofi tmux ranger zathura zathura-pdf-mupdf pandoc fd bat`
+  * `sudo pacman -S firefox chromium zsh unzip git htop python python-pip vim wget feh compton rofi tmux ranger w3m youtube-dl zathura zathura-pdf-mupdf pandoc fd bat`
   * yay - AUR helper, allows for software installation from Arch User Repo
     * `git clone https://aur.archlinux.org/yay.git`
     * `cd yay`
@@ -133,6 +138,7 @@
   * `yay spotify`
   * `yay tldr` - better help 
   * `yay vim-instant-markdown` - browser real time md preview
+  * `yay insync` - Google Drive client
   * Create or copy over ssh keys
     * create new
       * `ssh-keygen -t rsa`
