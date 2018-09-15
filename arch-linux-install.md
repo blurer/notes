@@ -136,6 +136,7 @@
     * `cd yay`
     * `makepkg -si`
   * `yay polybar` - i3 status bar
+  * `yay ttf-material-icons ttf-weather-icons ttf-font-awesome` - fonts for polybar
   * `yay discord-canary` - this version seems to work better with Arch
   * `yay spotify`
   * `yay tldr` - better help 
