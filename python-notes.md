@@ -102,4 +102,11 @@
 * you can add values to dictionaries at any time
 * removing key-value pairs
   * `del alien_0['points']`
-* 
+* for loop with dictionaries
+  * ```
+    for key, value in user_0.items():
+		print("\nKey: " + key)
+		print("Value: " + value)
+	```
+  * for k, v in user_0.items() - create names for the two variables that will hold the key and value in each key-value pair
+
