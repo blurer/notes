@@ -128,9 +128,11 @@
 
 * Install Packages & Other Configuration
   * After you're in the graphical environment, you're ready to install anything else you'll need. Some of my go to's are below.
-  * `sudo pacman -S firefox chromium zsh unzip git htop python python-pip vim wget feh compton rofi tmux ranger w3m youtube-dl zathura zathura-pdf-mupdf pandoc fd bat zsh-syntax-highlighting neofetch irssi nmap ntop tcpdump`
+  * `sudo pacman -S firefox chromium zsh unzip git htop python python-pip vim wget feh compton rofi tmux ranger w3m youtube-dl zathura zathura-pdf-mupdf pandoc fd bat zsh-syntax-highlighting neofetch irssi nmap ntop tcpdump imagemagick`
   * oh-my-zsh
     * `sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"` - **Only curl scripts to bash if you've read the script and trust the source, better to not do this though.**
+	* `git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"`
+	* `ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"`
   * yay - AUR helper, allows for software installation from Arch User Repo
     * `git clone https://aur.archlinux.org/yay.git`
     * `cd yay`
@@ -175,7 +177,12 @@
 	* `cd ~/.vim/bundle && git clone git://github.com/arcticicestudio/nord-vim.git`
 	* `cd ~/.vim/bundle && git clone https://github.com/tpope/vim-fugitive.git && vim -u NONE -c "helptags vim-fugitive/doc" -c q`
 	* `git clone https://github.com/itchyny/lightline.vim ~/.vim/bundle/lightline.vim`
-
+  * Install Python packages
+    * `pip install netaddr --user`
+	* `pip install flask --user`
+	* `pip install paramiko --user`
+	* `pip install pywal --user`
+	* `pip install sshmenu --user`
 
 
 
