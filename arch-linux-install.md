@@ -153,7 +153,7 @@
       * `ssh-keygen -t rsa`
     * copy ssh keys
       * `mkdir ~/.ssh`
-      * `cp $PATH_TO_SSH_KEYS$ ~/.ssh`
+      * `cp $PATH_TO_SSH_KEYS ~/.ssh`
       * `chmod 700 ~/.ssh`
       * `chmod 644 ~/.ssh/id_rsa.pub`
       * `chmod 600 ~/.ssh/id_rsa`
@@ -183,21 +183,3 @@
 	* `pip install paramiko --user`
 	* `pip install pywal --user`
 	* `pip install sshmenu --user`
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
