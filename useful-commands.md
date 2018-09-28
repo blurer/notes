@@ -51,3 +51,9 @@
 #### UniFi
 * show arp table
   * `cat /proc/net/arp`
+
+#### Proxmox
+* Create volume
+  * `pvcreate /dev/sd**`
+* Create volume group
+  * `vgcreate NAME /dev/sd**`
